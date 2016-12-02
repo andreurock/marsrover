@@ -1,0 +1,3 @@
+app_marsrover:
+    resource: "@AppBundle/Infrastructure/Resources/config/routing/marsrover_marsrover.yml"
+    prefix:   /marsrover
