@@ -16,12 +16,14 @@ use AppBundle\Application\UseCase\CreateMap\CreateMapException;
 use AppBundle\Application\UseCase\CreateMap\CreateMapRequest;
 use AppBundle\Application\UseCase\PlaceObstacle\PlaceObstacle;
 use AppBundle\Application\UseCase\PlaceObstacle\PlaceObstacleRequest;
+use AppBundle\Domain\Entity\Map\Map;
 
 
 class PlaceObstacleTest extends \PHPUnit_Framework_TestCase
 {
     public function testPlaceObstacle()
     {
+        Map::destroyMap();
         $mapObjectDataTransformer = new MapDataTransformerObject();
         $createMap = new CreateMap($mapObjectDataTransformer);
         $request = new CreateMapRequest(10, 10);

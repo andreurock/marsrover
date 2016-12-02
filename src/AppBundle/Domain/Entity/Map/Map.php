@@ -40,6 +40,11 @@ class Map implements MapInterface
         return $mapInstance;
     }
 
+    public static function getInstance() : MapInterface
+    {
+        return self::$instance;
+    }
+
     public static function getDimension() : Coordinates
     {
         return self::$dimension;
@@ -68,5 +73,9 @@ class Map implements MapInterface
         return $this->obstacles;
     }
 
-
+    public static function destroyMap()
+    {
+        MarsRover::destroy();
+        self::$instance = null;
+    }
 }

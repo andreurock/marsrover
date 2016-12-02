@@ -10,13 +10,16 @@ namespace AppBundle\Domain\ValueObject;
 
 class Coordinates
 {
+    const INITIAL_COORDINATE = 1;
+
     private $x;
     private $y;
 
     /**
      * Coordinates constructor.
-     * @param $x
-     * @param $y
+     * @param int $x
+     * @param int $y
+     * @throws CoordinatesException
      */
     public function __construct(int $x, int $y)
     {

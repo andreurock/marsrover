@@ -15,21 +15,25 @@ final class PlaceMarsRoverRequest
 
     private $y;
 
+    private $direction;
+
     /**
-     * CreateMapRequest constructor.
-     * @param $x
-     * @param $y
+     * PlaceMarsRoverRequest constructor.
+     * @param int $x
+     * @param int $y
+     * @param string $direction
      */
-    public function __construct($x, $y)
+    public function __construct(int $x, int $y, string $direction)
     {
         $this->x = $x;
         $this->y = $y;
+        $this->direction = $direction;
     }
 
     /**
      * @return mixed
      */
-    public function getX()
+    public function getX() : int
     {
         return $this->x;
     }
@@ -37,8 +41,16 @@ final class PlaceMarsRoverRequest
     /**
      * @return mixed
      */
-    public function getY()
+    public function getY() : int
     {
         return $this->y;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDirection(): string
+    {
+        return $this->direction;
     }
 }

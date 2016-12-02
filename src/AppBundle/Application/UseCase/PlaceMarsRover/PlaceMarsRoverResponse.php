@@ -18,7 +18,7 @@ final class PlaceMarsRoverResponse
         $this->marsRover = $marsRover;
     }
 
-    public function getMap()
+    public function getMarsRover()
     {
         return $this->marsRover;
     }
