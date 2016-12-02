@@ -15,4 +15,10 @@ interface ObstacleInterface
     public function __construct(Coordinates $coordinates);
 
     public function placeInMap();
+
+    public function getId(): string;
+
+    public function getCoordinates(): Coordinates;
+
+    public function equals(self $obstacle) : bool;
 }

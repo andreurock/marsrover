@@ -11,6 +11,7 @@ namespace AppBundle\Application\UseCase\PlaceObstacle;
 
 use AppBundle\Application\DataTransformer\ObstacleDataTransformer;
 use AppBundle\Domain\Entity\Obstacle\Obstacle;
+use AppBundle\Domain\Entity\Obstacle\ObstacleException;
 use AppBundle\Domain\ValueObject\Coordinates;
 
 final class PlaceObstacle
@@ -26,6 +27,11 @@ final class PlaceObstacle
         $this->obstacleDataTransformer = $obstacleDataTransformer;
     }
 
+    /**
+     * @param PlaceObstacleRequest $request
+     * @return PlaceObstacleResponse
+     * @throws PlaceObstacleException
+     */
     public function execute(PlaceObstacleRequest $request) : PlaceObstacleResponse
     {
         $x = $request->getX();
@@ -35,7 +41,7 @@ final class PlaceObstacle
 
         if (! $obstacle->placeInMap()) {
             throw new PlaceObstacleException(
-                "Obstacle already placed in that position!",
+                "Obstacle already placed in that position or out of limits!",
                 PlaceObstacleException::OBSTACLE_ALREADY_PLACED
             );
         }

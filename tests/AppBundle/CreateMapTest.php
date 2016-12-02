@@ -16,6 +16,17 @@ use AppBundle\Application\UseCase\CreateMap\CreateMapRequest;
 
 class CreateMapTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @expectedException AppBundle\Domain\ValueObject\CoordinatesException
+     * @expectedExceptionCode AppBundle\Domain\ValueObject\CoordinatesException::INVALID_COORDINATES
+     */
+    public function invalidCoordinates()
+    {
+        $mapObjectDataTransformer = new MapDataTransformerObject();
+        $createMap = new CreateMap($mapObjectDataTransformer);
+        $request = new CreateMapRequest(10, -3);
+        $createMap->execute($request);
+    }
 
     public function testNewMap()
     {

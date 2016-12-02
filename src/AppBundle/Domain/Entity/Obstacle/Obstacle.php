@@ -29,6 +29,10 @@ class Obstacle implements ObstacleInterface
         $map = Map::getInstance();
         $placedObstacles = $map->getObstacles();
 
+        if (Map::positionIsOut($this->coordinates)) {
+            return false;
+        }
+
         foreach ($placedObstacles as $obstacle) {
             if ($this->equals($obstacle)) {
                 return false;
@@ -36,6 +40,7 @@ class Obstacle implements ObstacleInterface
         }
 
         $map->appendObstacle($this);
+
         return true;
     }
 
@@ -55,7 +60,7 @@ class Obstacle implements ObstacleInterface
         return $this->coordinates;
     }
 
-    public function equals(self $obstacle) : bool
+    public function equals(ObstacleInterface $obstacle) : bool
     {
         return $this->getCoordinates()->equals($obstacle->getCoordinates());
     }

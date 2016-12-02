@@ -12,7 +12,7 @@ use AppBundle\Domain\Entity\Map\Map;
 
 interface MapDataTransformer
 {
-    public function write(Map $centre);
+    public function write(Map $map);
 
     public function read();
 }
