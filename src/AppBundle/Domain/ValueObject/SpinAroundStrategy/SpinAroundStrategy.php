@@ -11,5 +11,5 @@ namespace AppBundle\Domain\ValueObject\SpinAroundStrategy;
 
 interface SpinAroundStrategy
 {
-    public function spinAround();
+    public function spinAround() : void;
 }

@@ -9,15 +9,15 @@
 namespace AppBundle\Domain\Service;
 
 
-use AppBundle\Domain\ValueObject\MoveStrategy\MoveDownStrategy;
-use AppBundle\Domain\ValueObject\MoveStrategy\MoveUpStrategy;
+use AppBundle\Domain\ValueObject\MoveStrategy\MoveBackwardStrategy;
+use AppBundle\Domain\ValueObject\MoveStrategy\MoveForwardStrategy;
 use AppBundle\Domain\ValueObject\SpinAroundStrategy\SpinAroundLeftStrategy;
 use AppBundle\Domain\ValueObject\SpinAroundStrategy\SpinAroundRightStrategy;
 
 class MarsRoverRemoteControl
 {
-    const MOVE_UP = 1;
-    const MOVE_DOWN = 2;
+    const MOVE_FORWARD = 1;
+    const MOVE_BACKWARD = 2;
     const SPIN_AROUND_LEFT = 'L';
     const SPIN_AROUND_RIGHT = 'R';
 
@@ -26,11 +26,14 @@ class MarsRoverRemoteControl
         $moveStrategy = null;
 
         switch ($move) {
-            case self::MOVE_UP:
-                $moveStrategy = new MoveUpStrategy();
+            case self::MOVE_FORWARD:
+                $moveStrategy = new MoveForwardStrategy();
                 break;
-            case self::MOVE_DOWN:
-                $moveStrategy = new MoveDownStrategy();
+            case self::MOVE_BACKWARD:
+                $moveStrategy = new MoveBackwardStrategy();
+                break;
+            default:
+                throw new MarsRoverRemoteControlException("Invalid move", MarsRoverRemoteControlException::INVALID_MOVE);
                 break;
         }
 
@@ -48,6 +51,10 @@ class MarsRoverRemoteControl
             case self::SPIN_AROUND_RIGHT:
                 $spinAroundStrategy = new SpinAroundRightStrategy();
                 break;
+            default:
+                throw new MarsRoverRemoteControlException("Invalid spin", MarsRoverRemoteControlException::INVALID_SPIN);
+                break;
+
         }
 
         $spinAroundStrategy->spinAround();

@@ -62,7 +62,11 @@ class Map implements MapInterface
 
     public static function positionIsOut(Coordinates $coordinates) : bool
     {
-        return $coordinates->x() > self::$dimension->x() || $coordinates->y() > self::$dimension->y();
+        return ($coordinates->x() > self::$dimension->x()
+            || $coordinates->y() > self::$dimension->y()
+            || $coordinates->x() < Coordinates::INITIAL_COORDINATE
+            || $coordinates->y() < Coordinates::INITIAL_COORDINATE
+        );
     }
 
     /**

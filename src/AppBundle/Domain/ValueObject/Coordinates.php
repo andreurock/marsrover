@@ -23,10 +23,6 @@ class Coordinates
      */
     public function __construct(int $x, int $y)
     {
-        if (! $this->valid($x, $y)) {
-            throw new CoordinatesException("Coordinates must be > 0", CoordinatesException::INVALID_COORDINATES);
-        }
-
         $this->x = $x;
         $this->y = $y;
     }
@@ -55,10 +51,5 @@ class Coordinates
     public function __toString()
     {
         return $this->x . "," . $this->y;
-    }
-
-    private function valid(int $x, int $y) : bool
-    {
-        return $x > 0 && $y > 0;
     }
 }

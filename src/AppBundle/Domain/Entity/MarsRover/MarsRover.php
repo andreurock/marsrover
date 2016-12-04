@@ -54,7 +54,7 @@ class MarsRover implements MarsRoverInterface
 
     public function turnTo(string $direction)
     {
-        self::$position = $direction;
+        self::$direction = $direction;
     }
 
     public static function getInstance() : MarsRoverInterface
