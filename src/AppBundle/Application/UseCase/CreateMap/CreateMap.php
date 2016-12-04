@@ -8,7 +8,7 @@
 
 namespace AppBundle\Application\UseCase\CreateMap;
 
-use AppBundle\Application\DataTransfomer\MapDataTransfomer;
+use AppBundle\Application\DataTransformer\MapDataTransformer;
 use AppBundle\Domain\Entity\Map\Map;
 use AppBundle\Domain\ValueObject\Coordinates;
 
@@ -16,12 +16,12 @@ final class CreateMap
 {
     private $mapDataTransformer;
 
-    public function __construct(MapDataTransfomer $mapDataTransformer)
+    public function __construct(MapDataTransformer $mapDataTransformer)
     {
         $this->mapDataTransformer = $mapDataTransformer;
     }
 
-    public function execute(CreateMapRequest $request)
+    public function execute(CreateMapRequest $request) : CreateMapResponse
     {
         $x = $request->getX();
         $y = $request->getY();

@@ -6,11 +6,11 @@
  * Time: 21:19
  */
 
-namespace AppBundle\Application\DataTransfomer;
+namespace AppBundle\Application\DataTransformer;
 
 use AppBundle\Domain\Entity\Map\Map;
 
-class MapDataTransformerObject implements MapDataTransfomer
+class MapDataTransformerObject implements MapDataTransformer
 {
     private $map;
 

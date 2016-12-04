@@ -6,13 +6,13 @@
  * Time: 21:17
  */
 
-namespace AppBundle\Application\DataTransfomer;
+namespace AppBundle\Application\DataTransformer;
 
 use AppBundle\Domain\Entity\Map\Map;
 
-interface MapDataTransfomer
+interface MapDataTransformer
 {
-    public function write(Map $centre);
+    public function write(Map $map);
 
     public function read();
 }

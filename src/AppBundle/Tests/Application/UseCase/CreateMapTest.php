@@ -6,8 +6,7 @@
  * Time: 20:14
  */
 
-namespace Tests\AppBundle\Application\UseCase;
-
+namespace AppBundle\Tests\Application\UseCase;
 
 use AppBundle\Application\DataTransfomer\MapDataTransformerObject;
 use AppBundle\Application\UseCase\CreateMap\CreateMap;
@@ -24,6 +23,12 @@ class CreateMapTest extends \PHPUnit_Framework_TestCase
         $request = new CreateMapRequest(10, 10);
         $response = $createMap->execute($request);
         $map = $response->getMap();
+
+        $this->assertInstanceOf($map, 'AppBundle\Domain\Entity\Map\Map');
+        $this->assertInstanceOf($map::getDimension(), 'AppBundle\Domain\ValueObject\Coordinates');
+        $coordinates = $map::getDimension();
+        $this->assertEquals(10, $coordinates->x());
+        $this->assertEquals(10, $coordinates->y());
     }
 
     public function testMapAlreadyCreated()
