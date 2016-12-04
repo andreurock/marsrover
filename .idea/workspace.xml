@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7327a43b-0bcf-4b44-adc8-61749a42dae8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/SendCommand/SendCommandException.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Application/UseCase/CreateMapTest.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/CreateMap/CreateMap.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/CreateMap/CreateMap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/CreateMap/CreateMapRequest.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/CreateMap/CreateMapRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/CreateMap/CreateMapResponse.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/CreateMap/CreateMapResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/MarsRoverException.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/MarsRoverException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceMarsRover/PlaceMarsRover.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceMarsRover/PlaceMarsRover.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceMarsRover/PlaceMarsRoverRequest.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceMarsRover/PlaceMarsRoverRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceMarsRover/PlaceMarsRoverResponse.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceMarsRover/PlaceMarsRoverResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceObstacle/PlaceObstacle.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceObstacle/PlaceObstacle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceObstacle/PlaceObstacleRequest.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceObstacle/PlaceObstacleRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceObstacle/PlaceObstacleResponse.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/PlaceObstacle/PlaceObstacleResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/SendCommand/SendCommand.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/SendCommand/SendCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/SendCommand/SendCommandRequest.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/SendCommand/SendCommandRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/SendCommand/SendCommandResponse.php" afterPath="$PROJECT_DIR$/src/AppBundle/Application/UseCase/SendCommand/SendCommandResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/Map/Map.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/Map/Map.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/Map/MapInterface.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/Map/MapInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/MarsRover/MarsRover.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/MarsRover/MarsRover.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/MarsRover/MarsRoverInterface.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/MarsRover/MarsRoverInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/Obstacle/Obstacle.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/Obstacle/Obstacle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/Obstacle/ObstacleInterface.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/Entity/Obstacle/ObstacleInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/Service/MarsRoverRemoteControl.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/Service/MarsRoverRemoteControl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Command/Command.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Command/Command.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Command/MoveCommand.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Command/MoveCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Command/SpinAroundCommand.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Command/SpinAroundCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Coordinates.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Coordinates.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Direction.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Direction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/MoveStrategy/MoveBackwardStrategy.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/MoveStrategy/MoveBackwardStrategy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/MoveStrategy/MoveForwardStrategy.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/MoveStrategy/MoveForwardStrategy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/MoveStrategy/MoveStrategy.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/MoveStrategy/MoveStrategy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/SpinAroundStrategy/SpinAroundLeftStrategy.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/SpinAroundStrategy/SpinAroundLeftStrategy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/SpinAroundStrategy/SpinAroundRightStrategy.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/SpinAroundStrategy/SpinAroundRightStrategy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/SpinAroundStrategy/SpinAroundStrategy.php" afterPath="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/SpinAroundStrategy/SpinAroundStrategy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Infrastructure/Resources/config/routing/marsrover_marsrover.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Infrastructure/Resources/config/routing/marsrover_marsrover.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/AppBundle/MoveCommandTest.php" afterPath="$PROJECT_DIR$/tests/AppBundle/MoveCommandTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,12 +68,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Coordinates.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Coordinates.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Coordinates.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="544">
+              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="578">
+                <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -169,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/SpinAroundStrategy/SpinAroundRightStrategy.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Coordinates.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Direction.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -286,152 +265,6 @@
               <option name="myItemId" value="Domain" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ValueObject" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Domain" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ValueObject" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpinAroundStrategy" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Domain" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ValueObject" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MoveStrategy" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Domain" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ValueObject" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Command" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Domain" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MarsRover" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Domain" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -547,12 +380,12 @@
       <workItem from="1480617231713" duration="7142000" />
       <workItem from="1480625054887" duration="147000" />
       <workItem from="1480844570808" duration="10000" />
-      <workItem from="1480845005248" duration="6651000" />
+      <workItem from="1480845005248" duration="7488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13950000" />
+    <option name="totallyTimeSpent" value="14787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,16 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -974,9 +797,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Domain/ValueObject/Coordinates.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="544">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="578">
+            <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
