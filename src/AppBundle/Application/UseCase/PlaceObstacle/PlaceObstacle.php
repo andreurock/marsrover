@@ -8,19 +8,29 @@
 
 namespace AppBundle\Application\UseCase\PlaceObstacle;
 
-
 use AppBundle\Application\DataTransformer\ObstacleDataTransformer;
 use AppBundle\Domain\Entity\Obstacle\Obstacle;
 use AppBundle\Domain\Entity\Obstacle\ObstacleException;
 use AppBundle\Domain\ValueObject\Coordinates;
 
+/**
+ * Class PlaceObstacle
+ * Place an obstacle on the map
+ *
+ * @package AppBundle\Application\UseCase\PlaceObstacle
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 final class PlaceObstacle
 {
+    /**
+     * @var ObstacleDataTransformer
+     */
     private $obstacleDataTransformer;
 
     /**
      * PlaceObstacle constructor.
-     * @param $obstacleDataTransformer
+     * @param ObstacleDataTransformer $obstacleDataTransformer
      */
     public function __construct(ObstacleDataTransformer $obstacleDataTransformer)
     {

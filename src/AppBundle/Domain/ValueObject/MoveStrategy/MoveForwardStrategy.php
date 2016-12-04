@@ -8,14 +8,25 @@
 
 namespace AppBundle\Domain\ValueObject\MoveStrategy;
 
-
 use AppBundle\Domain\Entity\Map\Map;
 use AppBundle\Domain\Entity\MarsRover\MarsRover;
 use AppBundle\Domain\ValueObject\Coordinates;
 use AppBundle\Domain\ValueObject\Direction;
 
+/**
+ * Class MoveForwardStrategy
+ * Implements the Strategy Pattern.
+ * Moves forward the Mars Rover
+ *
+ * @package AppBundle\Domain\ValueObject\MoveStrategy
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 class MoveForwardStrategy implements MoveStrategy
 {
+    /**
+     * @return bool
+     */
     public function move() : bool
     {
         $marsRover = MarsRover::getInstance();

@@ -8,16 +8,29 @@
 
 namespace AppBundle\Application\UseCase\SendCommand;
 
-
 use AppBundle\Domain\Service\MarsRoverRemoteControl;
 use AppBundle\Domain\ValueObject\Command\Command;
 use AppBundle\Domain\ValueObject\Command\MoveCommand;
 use AppBundle\Domain\ValueObject\Command\SpinAroundCommand;
 
+/**
+ * Class SendCommandRequest
+ * Takes a command and a instruction to tell the Mars Rover to perform a determined action
+ *
+ * @package AppBundle\Application\UseCase\SendCommand
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 final class SendCommandRequest
 {
+    /**
+     * @var Command
+     */
     private $command;
 
+    /**
+     * @var mixed
+     */
     private $instruction;
 
     /**

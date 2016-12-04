@@ -8,10 +8,16 @@
 
 namespace AppBundle\Domain\Entity\MarsRover;
 
-
 use AppBundle\Domain\ValueObject\Coordinates;
 
-
+/**
+ * Interface MarsRoverInterface
+ * May implement the Singleton Pattern.
+ *
+ * @package AppBundle\Domain\Entity\MarsRover
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 interface MarsRoverInterface
 {
     public static function placeInMap(Coordinates $coordinates, string $direction) : ?self;

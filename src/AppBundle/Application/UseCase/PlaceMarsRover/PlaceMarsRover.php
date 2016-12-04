@@ -12,8 +12,19 @@ use AppBundle\Application\DataTransformer\MarsRoverDataTransformer;
 use AppBundle\Domain\Entity\MarsRover\MarsRover;
 use AppBundle\Domain\ValueObject\Coordinates;
 
+/**
+ * Class PlaceMarsRover
+ * Place a Mars Rover unique instance on the map
+ *
+ * @package AppBundle\Application\UseCase\PlaceMarsRover
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 final class PlaceMarsRover
 {
+    /**
+     * @var MarsRoverDataTransformer
+     */
     private $marsRoverDataTransformer;
 
     /**
@@ -25,6 +36,11 @@ final class PlaceMarsRover
         $this->marsRoverDataTransformer = $marsRoverDataTransformer;
     }
 
+    /**
+     * @param PlaceMarsRoverRequest $request
+     * @return PlaceMarsRoverResponse
+     * @throws PlaceMarsRoverException
+     */
     public function execute(PlaceMarsRoverRequest $request) : PlaceMarsRoverResponse
     {
         $x = $request->getX();

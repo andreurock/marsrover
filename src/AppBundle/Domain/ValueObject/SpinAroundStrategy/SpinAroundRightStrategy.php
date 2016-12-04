@@ -8,13 +8,20 @@
 
 namespace AppBundle\Domain\ValueObject\SpinAroundStrategy;
 
-
 use AppBundle\Domain\Entity\MarsRover\MarsRover;
 use AppBundle\Domain\ValueObject\Direction;
 
+/**
+ * Class SpinAroundRightStrategy
+ * Spin around to the right
+ *
+ * @package AppBundle\Domain\ValueObject\SpinAroundStrategy
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 class SpinAroundRightStrategy implements SpinAroundStrategy
 {
-    public function spinAround() : void
+    public function spinAround() : bool
     {
         $marsRover = MarsRover::getInstance();
         $newDirection = null;
@@ -35,5 +42,6 @@ class SpinAroundRightStrategy implements SpinAroundStrategy
         }
 
         $marsRover->turnTo($newDirection);
+        return true;
     }
 }

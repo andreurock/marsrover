@@ -8,15 +8,26 @@
 
 namespace AppBundle\Domain\ValueObject\MoveStrategy;
 
-
 use AppBundle\Domain\Entity\Map\Map;
 use AppBundle\Domain\Entity\MarsRover\MarsRover;
 use AppBundle\Domain\ValueObject\Coordinates;
 use AppBundle\Domain\ValueObject\CoordinatesException;
 use AppBundle\Domain\ValueObject\Direction;
 
+/**
+ * Class MoveBackwardStrategy
+ * Implements the Strategy Pattern.
+ * Moves backward the Mars Rover
+ *
+ * @package AppBundle\Domain\ValueObject\MoveStrategy
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 class MoveBackwardStrategy implements MoveStrategy
 {
+    /**
+     * @return bool
+     */
     public function move() : bool
     {
         $marsRover = MarsRover::getInstance();

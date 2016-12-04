@@ -8,13 +8,29 @@
 
 namespace AppBundle\Application\UseCase\PlaceMarsRover;
 
-
+/**
+ * Class PlaceMarsRoverRequest
+ * Takes two coordinates x and y, and the direction to place the Mars Rover
+ *
+ * @package AppBundle\Application\UseCase\PlaceMarsRover
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 final class PlaceMarsRoverRequest
 {
+    /**
+     * @var int
+     */
     private $x;
 
+    /**
+     * @var int
+     */
     private $y;
 
+    /**
+     * @var string
+     */
     private $direction;
 
     /**
@@ -31,7 +47,7 @@ final class PlaceMarsRoverRequest
     }
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getX() : int
     {
@@ -39,7 +55,7 @@ final class PlaceMarsRoverRequest
     }
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getY() : int
     {

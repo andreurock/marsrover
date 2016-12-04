@@ -8,7 +8,14 @@
 
 namespace AppBundle\Domain\ValueObject;
 
-
+/**
+ * Class Direction
+ * Different values for the direction
+ *
+ * @package AppBundle\Domain\ValueObject
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 class Direction
 {
     const NORTH = 'N';

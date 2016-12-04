@@ -8,36 +8,49 @@
 
 namespace AppBundle\Application\UseCase\CreateMap;
 
-
+/**
+ * Class CreateMapRequest
+ * Takes two coordinates to determine the dimension of the map
+ *
+ * @package AppBundle\Application\UseCase\CreateMap
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 final class CreateMapRequest
 {
+    /**
+     * @var int
+     */
     private $x;
 
+    /**
+     * @var int
+     */
     private $y;
 
     /**
      * CreateMapRequest constructor.
-     * @param $x
-     * @param $y
+     * @param int $x
+     * @param int $y
      */
-    public function __construct($x, $y)
+    public function __construct(int $x, int $y)
     {
         $this->x = $x;
         $this->y = $y;
     }
 
     /**
-     * @return mixed
+     * @return int
      */
-    public function getX()
+    public function getX() : int
     {
         return $this->x;
     }
 
     /**
-     * @return mixed
+     * @return int
      */
-    public function getY()
+    public function getY() : int
     {
         return $this->y;
     }

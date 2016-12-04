@@ -8,8 +8,16 @@
 
 namespace AppBundle\Domain\ValueObject\SpinAroundStrategy;
 
-
+/**
+ * Interface SpinAroundStrategy
+ * Implements the Strategy Pattern.
+ * Mars Rover can spin around to different directions
+ *
+ * @package AppBundle\Domain\ValueObject\SpinAroundStrategy
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 interface SpinAroundStrategy
 {
-    public function spinAround() : void;
+    public function spinAround() : bool;
 }

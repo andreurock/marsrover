@@ -8,11 +8,22 @@
 
 namespace AppBundle\Application\UseCase\PlaceMarsRover;
 
-
+/**
+ * Class PlaceMarsRoverResponse
+ * Returns the instance of the Mars Rover
+ *
+ * @package AppBundle\Application\UseCase\PlaceMarsRover
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 final class PlaceMarsRoverResponse
 {
     private $marsRover;
 
+    /**
+     * PlaceMarsRoverResponse constructor.
+     * @param $marsRover
+     */
     public function __construct($marsRover)
     {
         $this->marsRover = $marsRover;

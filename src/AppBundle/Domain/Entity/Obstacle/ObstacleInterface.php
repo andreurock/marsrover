@@ -10,6 +10,14 @@ namespace AppBundle\Domain\Entity\Obstacle;
 
 use AppBundle\Domain\ValueObject\Coordinates;
 
+/**
+ * Interface ObstacleInterface
+ * Obstacle placed in a determined position of the map.
+ *
+ * @package AppBundle\Domain\Entity\Obstacle
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 interface ObstacleInterface
 {
     public function __construct(Coordinates $coordinates);

@@ -7,6 +7,15 @@ namespace AppBundle\Application\UseCase\PlaceObstacle;
  * Date: 02/12/16
  * Time: 11:31
  */
+
+/**
+ * Class PlaceObstacleRequest
+ * Takes two coordinates x and y to place the obstacle on the map
+ *
+ * @package AppBundle\Application\UseCase\PlaceObstacle
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 final class PlaceObstacleRequest
 {
     private $x;

@@ -8,11 +8,26 @@
 
 namespace AppBundle\Domain\ValueObject;
 
+/**
+ * Class Coordinates
+ * A representation of a pair of coordinates.
+ *
+ * @package AppBundle\Domain\ValueObject
+ * @author Andreu Ros
+ * @version 1.0 2016
+ */
 class Coordinates
 {
     const INITIAL_COORDINATE = 1;
 
+    /**
+     * @var int
+     */
     private $x;
+
+    /**
+     * @var int
+     */
     private $y;
 
     /**
@@ -43,6 +58,12 @@ class Coordinates
         return $this->y;
     }
 
+    /**
+     * Checks if two coordinates are equals
+     *
+     * @param Coordinates $coordinates
+     * @return bool
+     */
     public function equals(self $coordinates) : bool
     {
         return $coordinates->x() == $this->x() && $coordinates->y() == $this->y();
